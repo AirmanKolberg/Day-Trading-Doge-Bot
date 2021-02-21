@@ -28,8 +28,6 @@ def buy_doge(price_to_buy):
 
 
 def sell_doge():
-    # Make sure there is no buying power first
-
     price_to_sell = float(input('Input price at which to sell Doge: '))
     try:
         selling = True
