@@ -49,7 +49,7 @@ def sell_doge(price_to_sell):
     except Exception:
         sleep(15)
         rh_login()
-        sell_doge()
+        sell_doge(price_to_sell)
     else:
         price_to_sell = (price_to_sell - (price_to_sell * 0.015)).__round__(5)
         buy_doge(price_to_sell)
