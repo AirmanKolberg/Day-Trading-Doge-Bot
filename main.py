@@ -50,7 +50,7 @@ def sell_doge():
         rh_login()
         sell_doge()
     else:
-        price_to_sell = (price_to_sell - (price_to_sell * 0.015)).__round__(4)
+        price_to_sell = (price_to_sell - (price_to_sell * 0.015)).__round__(5)
         buy_doge(price_to_sell)
 
 
