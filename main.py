@@ -10,7 +10,7 @@ def buy_doge(price_to_buy):
         while buying:
             current_doge_price = float(rs.crypto.get_crypto_quote('DOGE')['mark_price'])
             if current_doge_price < price_to_buy:
-                amount_to_buy = (get_crypto_buying_power() - 50).__round__(2)
+                amount_to_buy = (get_crypto_buying_power() - 75.01).__round__(2)
                 buy_crypto_by_price('DOGE', amount_to_buy)
                 buying = False
             time = get_current_time()
@@ -25,12 +25,12 @@ def buy_doge(price_to_buy):
         rh_login()
         buy_doge(price_to_buy)
     else:
-        sell_doge()
+        price_to_sell = (current_doge_price * 1.015).__round__(5)
+        sell_doge(price_to_sell)
 
 
-def sell_doge():
-    price_to_sell = float(input('Input minimum price at which to sell Doge: '))
-    amount_to_sell = int(input('How many Doge are you selling?\n'))
+def sell_doge(price_to_sell):
+    amount_to_sell = float(rs.crypto.get_crypto_positions()[0]['quantity'])
     try:
         selling = True
         while selling:
