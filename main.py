@@ -10,7 +10,7 @@ def buy_doge(price_to_buy):
         while buying:
             current_doge_price = float(rs.crypto.get_crypto_quote('DOGE')['mark_price'])
             if current_doge_price < price_to_buy:
-                amount_to_buy = (get_crypto_buying_power() - 0.4).__round__(2)
+                amount_to_buy = (get_crypto_buying_power() - 0.57).__round__(2)
                 buy_crypto_by_price('DOGE', amount_to_buy)
                 buying = False
             time = get_current_time()
