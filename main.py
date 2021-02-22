@@ -44,6 +44,7 @@ def sell_doge(price_to_sell):
             one_percent_away = price_to_sell * 0.99
             if current_doge_price < one_percent_away:
                 sleep(2)
+                amount_to_sell = float(rs.crypto.get_crypto_positions()[0]['quantity'])
         print(f'All Doge sold (around ${current_doge_price}/Doge).')
     except Exception:
         sleep(15)
