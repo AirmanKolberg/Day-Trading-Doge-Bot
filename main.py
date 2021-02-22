@@ -14,7 +14,7 @@ def buy_doge(price_to_buy):
                 buy_crypto_by_price('DOGE', amount_to_buy)
                 buying = False
             time = get_current_time()
-            print(f'${current_doge_price}/Doge at {time}')
+            print(f'${current_doge_price}/Doge at {time} (buying at ${price_to_buy})')
             sleep(1)
             one_percent_away = current_doge_price * 1.01
             if current_doge_price > one_percent_away:
@@ -39,7 +39,7 @@ def sell_doge():
                 sell_crypto_by_quantity('DOGE', amount_to_sell)
                 selling = False
             time = get_current_time()
-            print(f'${current_doge_price}/Doge at {time}')
+            print(f'${current_doge_price}/Doge at {time} (selling at ${amount_to_sell})')
             sleep(1)
             one_percent_away = price_to_sell * 0.99
             if current_doge_price < one_percent_away:
