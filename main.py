@@ -29,7 +29,7 @@ def buy_doge(price_to_buy):
 
 
 def sell_doge():
-    price_to_sell = float(input('Input price at which to sell Doge: '))
+    price_to_sell = float(input('Input minimum price at which to sell Doge: '))
     amount_to_sell = int(input('How many Doge are you selling?\n'))
     try:
         selling = True
@@ -50,7 +50,7 @@ def sell_doge():
         rh_login()
         sell_doge()
     else:
-        price_to_sell = (price_to_sell - (price_to_sell * 0.028)).__round__(4)
+        price_to_sell = (price_to_sell - (price_to_sell * 0.018)).__round__(4)
         buy_doge(price_to_sell)
 
 
