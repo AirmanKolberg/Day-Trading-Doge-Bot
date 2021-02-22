@@ -25,7 +25,7 @@ def buy_doge(price_to_buy):
         rh_login()
         buy_doge(price_to_buy)
     else:
-        price_to_sell = (current_doge_price * 1.015).__round__(5)
+        price_to_sell = (current_doge_price * 1.025).__round__(5)
         sell_doge(price_to_sell)
 
 
