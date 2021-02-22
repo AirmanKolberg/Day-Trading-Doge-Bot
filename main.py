@@ -61,5 +61,6 @@ if command == 'buy':
     price_to_buy = float(input('Input price at which to buy Doge: '))
     buy_doge(price_to_buy)
 elif command == 'sell':
-    sell_doge()
+    price_to_sell = float(input('Minimum price to sell per Doge: '))
+    sell_doge(price_to_sell)
 rh_logout()
