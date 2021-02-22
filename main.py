@@ -16,8 +16,8 @@ def buy_doge(price_to_buy):
             time = get_current_time()
             print(f'${current_doge_price}/Doge at {time}')
             sleep(1)
-            two_percent_away = current_doge_price * 1.02
-            if current_doge_price > two_percent_away:
+            one_percent_away = current_doge_price * 1.01
+            if current_doge_price > one_percent_away:
                 sleep(2)
         print(f'All Doge bought (around ${current_doge_price}/Doge).')
     except Exception:
@@ -41,8 +41,8 @@ def sell_doge():
             time = get_current_time()
             print(f'${current_doge_price}/Doge at {time}')
             sleep(1)
-            two_percent_away = price_to_sell * 0.98
-            if current_doge_price < two_percent_away:
+            one_percent_away = price_to_sell * 0.99
+            if current_doge_price < one_percent_away:
                 sleep(2)
         print(f'All Doge sold (around ${current_doge_price}/Doge).')
     except Exception:
