@@ -1,15 +1,36 @@
 import pandas as pd
 from dataframe_info import *
 from os import system
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 def put_data_into_framework(the_data):
+    days = list()
+
+    def format_date_for_framework(date):
+        formatted_date = (str(date).split(' '))[0]
+        days.append(formatted_date)
+
+    def get_next_date(date):
+        if len(days) == 31:
+            pass
+        else:
+            next_date = date + timedelta(days=1)
+            format_date_for_framework(next_date)
+            get_next_date(next_date)
+
+    if not days:
+        today = datetime.today()
+        format_date_for_framework(today)
+
+    get_next_date(today)
+
     data_broken = [the_data[i:i + 31] for i in range(0, len(the_data), 31)]
-    days = [i for i in range(31)]
+
+    # days = [i for i in range(31)]
 
     framework = {
-        'Days to Sell': days,
+        'Date Sold': days,
         '1% Growth': data_broken[0],
         '1.1% Growth': data_broken[1],
         '1.2% Growth': data_broken[2],
@@ -60,11 +81,11 @@ if __name__ == '__main__':
 
     # Create the DataFrame, export and open it
     framework = put_data_into_framework(all_data)
-    df = pd.DataFrame(framework, columns=['Days to Sell', '1% Growth', '1.1% Growth',
+    df = pd.DataFrame(framework, columns=['Date Sold', '1% Growth', '1.1% Growth',
                                           '1.2% Growth', '1.3% Growth', '1.4% Growth',
                                           '1.5% Growth'])
 
     today = datetime.today().strftime('%m-%d-%y')
-    df.to_csv(f'{today}ProfitsChart.csv')
+    df.to_csv('frankProfitsChart.csv')
 
-    _ = system(f'open {today}ProfitsChart.csv')
+    _ = system('open frankProfitsChart.csv')
