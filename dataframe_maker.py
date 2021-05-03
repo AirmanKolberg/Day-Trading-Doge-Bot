@@ -1,6 +1,7 @@
 import pandas as pd
 from dataframe_info import *
 from os import system
+from datetime import datetime
 
 
 def put_data_into_framework(the_data):
@@ -62,6 +63,8 @@ if __name__ == '__main__':
     df = pd.DataFrame(framework, columns=['Days to Sell', '1% Growth', '1.1% Growth',
                                           '1.2% Growth', '1.3% Growth', '1.4% Growth',
                                           '1.5% Growth'])
-    df.to_csv('frankProfitsChart.csv')
 
-    _ = system('open frankProfitsChart.csv')
+    today = datetime.today().strftime('%m-%d-%y')
+    df.to_csv(f'{today}ProfitsChart.csv')
+
+    _ = system(f'open {today}ProfitsChart.csv')
