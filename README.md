@@ -7,7 +7,7 @@ PS - In case you didn't know, the stock market, cryptos, etc., is all a legal Po
 ---
 
 ### Donations!
-If you found this simple script helpful, or rather you know someone for whom this script would be helpful, consider contributing to the Personal Foundation of My Pocket.  This application did take me many, perhaps even several minutes to make, let alone this Markdown file.
+Consider donating, though of course not necessary!  :)
 
 Cardano (ADA):
 addr1q9jxsfd87g4f9rcl7x43lwxnkmklek279yw0fhwrsm3pjjal23me7f9yesnhs2fhpf05xd0deta3csgn4z433rze7yjsav8ejn
