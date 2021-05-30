@@ -14,8 +14,16 @@ addr1q9jxsfd87g4f9rcl7x43lwxnkmklek279yw0fhwrsm3pjjal23me7f9yesnhs2fhpf05xd0deta
 
 
 BitCoin (BTC): 
-3Gj49JGVPXjw3994bSebQNrHsFJkZE9iRg
+33XbUGgEGx3oQ8wZEsdWBtZ6jncTPWoNtq
 
 
 Etherium (ETH): 
-0x08b57537943BBb6A527C9c861E9550D9Be9f7729
+0x68D8928631f697820cf2bd9B275e5b39D6Cba020
+
+
+Dogecoin (DOGE):
+DNJoCDAwwVcpRMH3wCeeCwRMpzUHW6uvbH
+
+
+Ripple (XRP):
+rahunjARy7sb2AEc75xdzqSRuMeUPqXxF2
