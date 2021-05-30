@@ -3,3 +3,19 @@ This is a little script I worked on using the robin_stocks API as well as the IE
 
 
 PS - In case you didn't know, the stock market, cryptos, etc., is all a legal Ponzi scheme.  Gamble at your own risk, or better yet- don't do it at all.  But, if you've got some money to spare and you want to have some fun, go wild.  lol
+
+---
+
+### Donations!
+If you found this simple script helpful, or rather you know someone for whom this script would be helpful, consider contributing to the Personal Foundation of My Pocket.  This application did take me many, perhaps even several minutes to make, let alone this Markdown file.
+
+Cardano (ADA):
+addr1q9jxsfd87g4f9rcl7x43lwxnkmklek279yw0fhwrsm3pjjal23me7f9yesnhs2fhpf05xd0deta3csgn4z433rze7yjsav8ejn
+
+
+BitCoin (BTC): 
+3Gj49JGVPXjw3994bSebQNrHsFJkZE9iRg
+
+
+Etherium (ETH): 
+0x08b57537943BBb6A527C9c861E9550D9Be9f7729
