@@ -27,3 +27,7 @@ DNJoCDAwwVcpRMH3wCeeCwRMpzUHW6uvbH
 
 Ripple (XRP):
 rahunjARy7sb2AEc75xdzqSRuMeUPqXxF2
+
+
+VeChain (VET):
+0xeD36284Fb479F15620f5c8Af0996A723c6b5dc43
