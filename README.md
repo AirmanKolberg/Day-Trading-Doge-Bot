@@ -5,13 +5,13 @@ PS - In case you didn't know, the stock market, some cryptos, etc., is all a leg
 
 ## Coins that can trade with this app
 Any and all coins available through Robinhood, including:
-- BSV
-- BCH
-- BTC
-- ETC
-- ETH
-- DOGE
-- LTC
+- BSV (BitCoin SV)
+- BCH (BitCoin Cash)
+- BTC (BitCoin)
+- ETC (Ethereum Classic)
+- ETH (Ethereum)
+- DOGE (Dogecoin)
+- LTC (Litecoin)
 
 ---
 
